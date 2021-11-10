@@ -1,5 +1,7 @@
 # lohica_node_js_course
 lohica node.js course
+student - Serhii Prostakov 
+
 
 homework-2:
 /*
@@ -8,3 +10,4 @@ homework-2:
     curl http://localhost:4000/movie -X GET --data '{"title": "Terminator"}'
     curl http://localhost:4000/movie -X GET --data '@test.json'
 */
+

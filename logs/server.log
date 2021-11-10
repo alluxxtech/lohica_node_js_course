@@ -1,0 +1,135 @@
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T10:43:13.087Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T10:43:42.451Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T12:16:39.679Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:16:57.393Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:17:02.860Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:19:40.307Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T12:20:44.614Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:21:00.282Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:21:01.430Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:21:03.190Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:21:58.609Z'
+}
+{
+  message: "Request type: GET, Request url: /movie, Message: request GET movie has body: '[object Object]'",
+  level: 'info',
+  timestamp: '2021-11-10T12:22:54.311Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:24:26.819Z'
+}
+{
+  message: "Request type: GET, Request url: /movie, Message: request GET movie has body: '[object Object]'",
+  level: 'info',
+  timestamp: '2021-11-10T12:24:33.124Z'
+}
+{
+  message: 'The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object',
+  level: 'error',
+  timestamp: '2021-11-10T12:24:33.143Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T12:26:02.176Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:26:26.495Z'
+}
+{
+  message: `Request type: GET, Request url: /movie, Message: request GET movie has body: '{"title": "Avatar"}'`,
+  level: 'info',
+  timestamp: '2021-11-10T12:26:33.043Z'
+}
+{
+  message: 'The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object',
+  level: 'error',
+  timestamp: '2021-11-10T12:26:33.052Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:27:31.573Z'
+}
+{
+  message: `Request type: GET, Request url: /movie, Message: request GET movie has body: '{"title": "Avatar"}'`,
+  level: 'info',
+  timestamp: '2021-11-10T12:27:33.879Z'
+}
+{
+  message: 'The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object',
+  level: 'error',
+  timestamp: '2021-11-10T12:27:33.886Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:28:42.074Z'
+}
+{
+  message: `Request type: GET, Request url: /movie, Message: request GET movie has body: '{"title": "Avatar"}'`,
+  level: 'info',
+  timestamp: '2021-11-10T12:28:45.097Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-10T12:41:27.617Z'
+}
+{
+  message: `Request type: GET, Request url: /movie, Message: request GET movie has body: '{"title": "Avatar"}'`,
+  level: 'info',
+  timestamp: '2021-11-10T12:41:31.013Z'
+}
+{
+  message: 'Method GET, url /movie worked successfully',
+  level: 'info',
+  timestamp: '2021-11-10T12:41:31.016Z'
+}

@@ -1,0 +1,29 @@
+{
+  "name": "lohica_node_js_course",
+  "version": "1.0.0",
+  "description": "lohica node.js course",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alluxxtech/lohica_node_js_course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alluxxtech/lohica_node_js_course/issues"
+  },
+  "homepage": "https://github.com/alluxxtech/lohica_node_js_course#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/winston": "^2.4.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "winston": "^3.3.3"
+  }
+}

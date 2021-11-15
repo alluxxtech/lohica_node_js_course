@@ -1,0 +1,55 @@
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T10:43:13.087Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T12:16:39.679Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:17:02.860Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T12:20:44.614Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:21:01.430Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:21:03.190Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-10T12:21:58.609Z'
+}
+{
+  message: 'The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object',
+  level: 'error',
+  timestamp: '2021-11-10T12:24:33.143Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-10T12:26:02.176Z'
+}
+{
+  message: 'The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object',
+  level: 'error',
+  timestamp: '2021-11-10T12:26:33.052Z'
+}
+{
+  message: 'The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object',
+  level: 'error',
+  timestamp: '2021-11-10T12:27:33.886Z'
+}

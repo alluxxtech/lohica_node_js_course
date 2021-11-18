@@ -1,5 +1,3 @@
-import config from './config';
-
 import {createLogger, format, transports} from 'winston';
 import path from 'path';
 
@@ -9,7 +7,7 @@ export const logger = createLogger({
         format.prettyPrint()
     ),
     transports: [
-        new transports.File({ 
+        new transports.File({
             level: 'info',
             filename: path.join(__dirname, '../logs/server.log'),
         }),

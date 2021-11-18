@@ -7,13 +7,11 @@ const { APP_PORT, ENV } = config;
 
 createServer((req: IncomingMessage, res: ServerResponse) => {
     const chunks: Buffer[] = [];
-    // let body: any;
     req.on('data', data => {
         chunks.push(data);
     })
     .on('end', () => {
         const rawBody = Buffer.concat(chunks).toString();
-        const body = JSON.parse(rawBody);
         Router(req, res, rawBody);
     });
     

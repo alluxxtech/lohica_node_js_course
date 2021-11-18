@@ -2103,3 +2103,108 @@
   level: 'info',
   timestamp: '2021-11-18T10:33:10.724Z'
 }
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-18T10:45:39.407Z'
+}
+{
+  message: "Request type: GET, Request url: /movies, Message: request GET movie has body: ''",
+  level: 'info',
+  timestamp: '2021-11-18T10:45:45.359Z'
+}
+{
+  message: 'Method GET, url /movies worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:45:45.364Z'
+}
+{
+  message: "Request type: GET, Request url: /movies/terminator, Message: request GET movie has body: ''",
+  level: 'info',
+  timestamp: '2021-11-18T10:45:50.616Z'
+}
+{
+  message: 'Method GET, url /movies/terminator worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:45:50.617Z'
+}
+{
+  message: "Request type: DELETE, Request url: /movies/terminator, Message: request DELETE movie has body: ''",
+  level: 'info',
+  timestamp: '2021-11-18T10:46:01.681Z'
+}
+{
+  message: 'Method DELETE, url /movies/terminator worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:46:01.682Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-18T10:48:45.988Z'
+}
+{
+  message: "Request type: POST, Request url: /movies, Message: request POST movie has body: '{\n" +
+    '    "name": "terminator",\n' +
+    '    "comment": "nice movie2", \n' +
+    '    "personalScore": "5"\n' +
+    '} \n' +
+    "'",
+  level: 'info',
+  timestamp: '2021-11-18T10:49:01.580Z'
+}
+{
+  message: 'Method POST, url /movies worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:49:01.734Z'
+}
+{
+  message: 'Server is running on port 5000. Env is undefined.',
+  level: 'info',
+  timestamp: '2021-11-18T10:51:36.829Z'
+}
+{
+  message: "Request type: DELETE, Request url: /movies/terminator, Message: request DELETE movie has body: ''",
+  level: 'info',
+  timestamp: '2021-11-18T10:51:40.891Z'
+}
+{
+  message: 'Method DELETE, url /movies/terminator worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:51:40.897Z'
+}
+{
+  message: "Request type: POST, Request url: /movies, Message: request POST movie has body: '{\n" +
+    '    "name": "terminator",\n' +
+    '    "comment": "nice movie2", \n' +
+    '    "personalScore": "5"\n' +
+    '} \n' +
+    "'",
+  level: 'info',
+  timestamp: '2021-11-18T10:51:45.840Z'
+}
+{
+  message: 'Method POST, url /movies worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:51:45.922Z'
+}
+{
+  message: "Request type: GET, Request url: /movies/terminator, Message: request GET movie has body: ''",
+  level: 'info',
+  timestamp: '2021-11-18T10:51:53.577Z'
+}
+{
+  message: 'Method GET, url /movies/terminator worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:51:53.578Z'
+}
+{
+  message: "Request type: GET, Request url: /movies, Message: request GET movie has body: ''",
+  level: 'info',
+  timestamp: '2021-11-18T10:52:00.883Z'
+}
+{
+  message: 'Method GET, url /movies worked successfully',
+  level: 'info',
+  timestamp: '2021-11-18T10:52:00.884Z'
+}

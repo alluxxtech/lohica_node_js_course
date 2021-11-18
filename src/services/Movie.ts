@@ -25,19 +25,19 @@ const Movie = (req: IncomingMessage, res: ServerResponse, body: string) => {
             const response = await axios.get(url);
             const data = {...response.data, ...parsedBody};
 
-            Storage.write(data);
+            const movie = await Storage.write(data);
             
-            res.end(JSON.stringify(data));
+            res.end(JSON.stringify(movie));
             logger.info(message);
         },
-        patch: () => {
-            const updatedMovie = Storage.update(id, parsedBody);
-            res.end(updatedMovie);
+        patch: async () => {
+            const updatedMovie = await Storage.update(id, parsedBody);
+            res.end(JSON.stringify(updatedMovie));
             logger.info(message);
         },
-        delete: () => {
-            const deletedMovie = Storage.delete(id);
-            res.end(deletedMovie);
+        delete: async () => {
+            const deletedMovie = await Storage.delete(id);
+            res.end(JSON.stringify(deletedMovie));
             logger.info(message);
         }
     }

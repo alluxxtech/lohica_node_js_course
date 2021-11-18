@@ -4,7 +4,7 @@ import * as fs from 'fs';
 const isExist = (db: Array<object>, id: string) => db.some((movie: any) => movie.name === id);
 
 const Storage = {
-    get: async (id?: string) => {
+    get: (id?: string) => {
         return new Promise((resolve, reject) => {
             fs.readFile(config.localDB, 'utf8', function readFileCallback(err, data: string){
                 if (err){
@@ -21,19 +21,25 @@ const Storage = {
         });
     },
     write: (movie: any) => {
-        fs.readFile(config.localDB, 'utf8', function readFileCallback(err, data: string){
-            if (err){
-                console.log(err);
-            } else {
-                let db = JSON.parse(data);
-                if(!isExist(db, movie.name)) {
-                    db = [...db, movie];
-                    fs.writeFile(config.localDB, JSON.stringify(db), function(err) {
-                        if (err) throw err;
-                        console.log('the movie has been added to the database');
-                    });
-                }
-        }});
+        return new Promise((resolve, reject) => {
+            fs.readFile(config.localDB, 'utf8', function readFileCallback(err, data: string){
+                if (err){
+                    console.log(err);
+                    reject(err);
+                } else {
+                    let db = JSON.parse(data);
+                    if(!isExist(db, movie.name)) {
+                        db = [...db, movie];
+                        fs.writeFile(config.localDB, JSON.stringify(db), function(err) {
+                            if (err) { 
+                                reject(err);
+                            }
+                            console.log('the movie has been added to the database');
+                            resolve(movie);
+                        });
+                    }
+            }});
+        });
     },
     update: (id: string, customInfo: any) => {
         return new Promise((resolve, reject) => {
@@ -41,6 +47,7 @@ const Storage = {
             fs.readFile(config.localDB, 'utf8', function readFileCallback(err, data: string){
                 if (err){
                     console.log(err);
+                    reject(err);
                 } else {
                     let db = JSON.parse(data);
                     if(isExist(db, id)) {
@@ -56,15 +63,17 @@ const Storage = {
                             return movie;
                         });
                         fs.writeFile(config.localDB, JSON.stringify(updatedDb), function(err) {
-                            if (err) throw err;
+                            if (err) {
+                                reject(err);
+                            }
                             console.log('the update of the movie in the database is complete');
-                            reject(err);
                         });
                     } else {
                         updatedMovie = `movie id '${id}' not found`;
                     }
-            }});
-            resolve(updatedMovie);
+                }
+                resolve(updatedMovie);
+            });
         });
     },
     delete: (id: string) => {
@@ -73,6 +82,7 @@ const Storage = {
             fs.readFile(config.localDB, 'utf8', function readFileCallback(err, data: string){
                 if (err){
                     console.log(err);
+                    reject(err);
                 } else {
                     let db = JSON.parse(data);
                     if(isExist(db, id)) {
@@ -82,15 +92,15 @@ const Storage = {
                             return false;
                         });
                         fs.writeFile(config.localDB, JSON.stringify(updatedDb), function(err) {
-                            if (err) throw err;
+                            if (err) reject(err);;
                             console.log('the movie was removed from DB successfull');
-                            reject(err);
                         });
                     } else {
                         deletedMovie = `movie id '${id}' not found`;
                     }
-            }});
-            resolve(deletedMovie);
+                }
+                resolve(deletedMovie);
+            });
         });
     }
 }

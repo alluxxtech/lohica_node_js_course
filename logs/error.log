@@ -53,3 +53,853 @@
   level: 'error',
   timestamp: '2021-11-10T12:27:33.886Z'
 }
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-17T20:04:22.868Z'
+}
+{
+  message: 'Invalid api url: /movies',
+  level: 'error',
+  timestamp: '2021-11-17T20:10:18.616Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-17T20:11:31.183Z'
+}
+{
+  errno: -61,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 80,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.24.0'
+    },
+    method: 'get',
+    url: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+      method: 'GET',
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'User-Agent': 'axios/0.24.0'
+      },
+      agent: undefined,
+      agents: { http: undefined, https: undefined },
+      auth: undefined,
+      hostname: null,
+      port: null,
+      nativeProtocols: {
+        'http:': {
+          _connectionListener: [Function: connectionListener],
+          METHODS: [
+            'ACL',         'BIND',       'CHECKOUT',
+            'CONNECT',     'COPY',       'DELETE',
+            'GET',         'HEAD',       'LINK',
+            'LOCK',        'M-SEARCH',   'MERGE',
+            'MKACTIVITY',  'MKCALENDAR', 'MKCOL',
+            'MOVE',        'NOTIFY',     'OPTIONS',
+            'PATCH',       'POST',       'PROPFIND',
+            'PROPPATCH',   'PURGE',      'PUT',
+            'REBIND',      'REPORT',     'SEARCH',
+            'SOURCE',      'SUBSCRIBE',  'TRACE',
+            'UNBIND',      'UNLINK',     'UNLOCK',
+            'UNSUBSCRIBE'
+          ],
+          STATUS_CODES: {
+            '100': 'Continue',
+            '101': 'Switching Protocols',
+            '102': 'Processing',
+            '103': 'Early Hints',
+            '200': 'OK',
+            '201': 'Created',
+            '202': 'Accepted',
+            '203': 'Non-Authoritative Information',
+            '204': 'No Content',
+            '205': 'Reset Content',
+            '206': 'Partial Content',
+            '207': 'Multi-Status',
+            '208': 'Already Reported',
+            '226': 'IM Used',
+            '300': 'Multiple Choices',
+            '301': 'Moved Permanently',
+            '302': 'Found',
+            '303': 'See Other',
+            '304': 'Not Modified',
+            '305': 'Use Proxy',
+            '307': 'Temporary Redirect',
+            '308': 'Permanent Redirect',
+            '400': 'Bad Request',
+            '401': 'Unauthorized',
+            '402': 'Payment Required',
+            '403': 'Forbidden',
+            '404': 'Not Found',
+            '405': 'Method Not Allowed',
+            '406': 'Not Acceptable',
+            '407': 'Proxy Authentication Required',
+            '408': 'Request Timeout',
+            '409': 'Conflict',
+            '410': 'Gone',
+            '411': 'Length Required',
+            '412': 'Precondition Failed',
+            '413': 'Payload Too Large',
+            '414': 'URI Too Long',
+            '415': 'Unsupported Media Type',
+            '416': 'Range Not Satisfiable',
+            '417': 'Expectation Failed',
+            '418': "I'm a Teapot",
+            '421': 'Misdirected Request',
+            '422': 'Unprocessable Entity',
+            '423': 'Locked',
+            '424': 'Failed Dependency',
+            '425': 'Too Early',
+            '426': 'Upgrade Required',
+            '428': 'Precondition Required',
+            '429': 'Too Many Requests',
+            '431': 'Request Header Fields Too Large',
+            '451': 'Unavailable For Legal Reasons',
+            '500': 'Internal Server Error',
+            '501': 'Not Implemented',
+            '502': 'Bad Gateway',
+            '503': 'Service Unavailable',
+            '504': 'Gateway Timeout',
+            '505': 'HTTP Version Not Supported',
+            '506': 'Variant Also Negotiates',
+            '507': 'Insufficient Storage',
+            '508': 'Loop Detected',
+            '509': 'Bandwidth Limit Exceeded',
+            '510': 'Not Extended',
+            '511': 'Network Authentication Required'
+          },
+          Agent: [Function: Agent] { defaultMaxSockets: Infinity },
+          ClientRequest: [Function: ClientRequest],
+          IncomingMessage: [Function: IncomingMessage],
+          OutgoingMessage: [Function: OutgoingMessage],
+          Server: [Function: Server],
+          ServerResponse: [Function: ServerResponse],
+          createServer: [Function: createServer],
+          validateHeaderName: [Function: __node_internal_],
+          validateHeaderValue: [Function: __node_internal_],
+          get: [Function: get],
+          request: [Function: request],
+          maxHeaderSize: [Getter],
+          globalAgent: [Getter/Setter]
+        },
+        'https:': {
+          Agent: [Function: Agent],
+          globalAgent: Agent {
+            _events: [Object: null prototype] {
+              free: [Function (anonymous)],
+              newListener: [Function: maybeEnableKeylog]
+            },
+            _eventsCount: 2,
+            _maxListeners: undefined,
+            defaultPort: 443,
+            protocol: 'https:',
+            options: [Object: null prototype] { path: null },
+            requests: [Object: null prototype] {},
+            sockets: [Object: null prototype] {},
+            freeSockets: [Object: null prototype] {},
+            keepAliveMsecs: 1000,
+            keepAlive: false,
+            maxSockets: Infinity,
+            maxFreeSockets: 256,
+            scheduling: 'lifo',
+            maxTotalSockets: Infinity,
+            totalSocketCount: 0,
+            maxCachedSessions: 100,
+            _sessionCache: { map: {}, list: [] },
+            [Symbol(kCapture)]: false
+          },
+          Server: [Function: Server],
+          createServer: [Function: createServer],
+          get: [Function: get],
+          request: [Function: request]
+        }
+      },
+      pathname: 'omdbapi.com/',
+      search: '?apikey=fbc69e49&t=terminator'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: <ref *2> ClientRequest {
+      _events: [Object: null prototype] {
+        response: [Function: bound onceWrapper] {
+          listener: [Function (anonymous)]
+        },
+        abort: [Function (anonymous)],
+        aborted: [Function (anonymous)],
+        connect: [Function (anonymous)],
+        error: [Function (anonymous)],
+        socket: [Function (anonymous)],
+        timeout: [Function (anonymous)]
+      },
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: Socket {
+        connecting: false,
+        _hadError: true,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: ReadableState {
+          objectMode: false,
+          highWaterMark: 16384,
+          buffer: BufferList { head: null, tail: null, length: 0 },
+          length: 0,
+          pipes: [],
+          flowing: true,
+          ended: false,
+          endEmitted: false,
+          reading: true,
+          constructed: true,
+          sync: false,
+          needReadable: true,
+          emittedReadable: false,
+          readableListening: false,
+          resumeScheduled: false,
+          errorEmitted: true,
+          emitClose: false,
+          autoDestroy: true,
+          destroyed: true,
+          errored: Error: connect ECONNREFUSED 127.0.0.1:80
+              at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1132:16) {
+            errno: -61,
+            code: 'ECONNREFUSED',
+            syscall: 'connect',
+            address: '127.0.0.1',
+            port: 80,
+            config: {
+              transitional: {
+                silentJSONParsing: true,
+                forcedJSONParsing: true,
+                clarifyTimeoutError: false
+              },
+              adapter: [Function: httpAdapter],
+              transformRequest: [ [Function: transformRequest] ],
+              transformResponse: [ [Function: transformResponse] ],
+              timeout: 0,
+              xsrfCookieName: 'XSRF-TOKEN',
+              xsrfHeaderName: 'X-XSRF-TOKEN',
+              maxContentLength: -1,
+              maxBodyLength: -1,
+              validateStatus: [Function: validateStatus],
+              headers: {
+                Accept: 'application/json, text/plain, */*',
+                'User-Agent': 'axios/0.24.0'
+              },
+              method: 'get',
+              url: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+              data: undefined
+            },
+            request: [Circular *1],
+            response: undefined,
+            isAxiosError: true,
+            toJSON: [Function: toJSON],
+            level: 'error',
+            timestamp: '2021-11-17T21:06:41.079Z',
+            [Symbol(level)]: 'error'
+          },
+          closed: true,
+          closeEmitted: true,
+          defaultEncoding: 'utf8',
+          awaitDrainWriters: null,
+          multiAwaitDrain: false,
+          readingMore: false,
+          decoder: null,
+          encoding: null,
+          [Symbol(kPaused)]: false
+        },
+        _events: [Object: null prototype] {
+          end: [Function: onReadableStreamEnd],
+          connect: [
+            [Function: bound onceWrapper] {
+              listener: [Function (anonymous)]
+            },
+            [Function: bound onceWrapper] {
+              listener: [Function: connect]
+            },
+            [Function: bound onceWrapper] {
+              listener: [Function (anonymous)]
+            }
+          ],
+          free: [Function: onFree],
+          close: [ [Function: onClose], [Function: socketCloseListener] ],
+          timeout: [Function: onTimeout],
+          agentRemove: [Function: onRemove],
+          error: [Function: socketErrorListener],
+          drain: [Function: ondrain]
+        },
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: WritableState {
+          objectMode: false,
+          highWaterMark: 16384,
+          finalCalled: false,
+          needDrain: false,
+          ending: false,
+          ended: false,
+          finished: false,
+          destroyed: true,
+          decodeStrings: false,
+          defaultEncoding: 'utf8',
+          length: 163,
+          writing: true,
+          corked: 0,
+          sync: false,
+          bufferProcessing: false,
+          onwrite: [Function: bound onwrite],
+          writecb: [Function: bound onFinish],
+          writelen: 163,
+          afterWriteTickInfo: null,
+          buffered: [],
+          bufferedIndex: 0,
+          allBuffers: true,
+          allNoop: true,
+          pendingcb: 1,
+          constructed: true,
+          prefinished: false,
+          errorEmitted: true,
+          emitClose: false,
+          autoDestroy: true,
+          errored: Error: connect ECONNREFUSED 127.0.0.1:80
+              at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1132:16) {
+            errno: -61,
+            code: 'ECONNREFUSED',
+            syscall: 'connect',
+            address: '127.0.0.1',
+            port: 80,
+            config: {
+              transitional: {
+                silentJSONParsing: true,
+                forcedJSONParsing: true,
+                clarifyTimeoutError: false
+              },
+              adapter: [Function: httpAdapter],
+              transformRequest: [ [Function: transformRequest] ],
+              transformResponse: [ [Function: transformResponse] ],
+              timeout: 0,
+              xsrfCookieName: 'XSRF-TOKEN',
+              xsrfHeaderName: 'X-XSRF-TOKEN',
+              maxContentLength: -1,
+              maxBodyLength: -1,
+              validateStatus: [Function: validateStatus],
+              headers: {
+                Accept: 'application/json, text/plain, */*',
+                'User-Agent': 'axios/0.24.0'
+              },
+              method: 'get',
+              url: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+              data: undefined
+            },
+            request: [Circular *1],
+            response: undefined,
+            isAxiosError: true,
+            toJSON: [Function: toJSON],
+            level: 'error',
+            timestamp: '2021-11-17T21:06:41.079Z',
+            [Symbol(level)]: 'error'
+          },
+          closed: true,
+          closeEmitted: true,
+          [Symbol(kOnFinished)]: []
+        },
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: 'GET omdbapi.com/?apikey=fbc69e49&t=terminator HTTP/1.1\r\n' +
+          'Accept: application/json, text/plain, */*\r\n' +
+          'User-Agent: axios/0.24.0\r\n' +
+          'Host: localhost\r\n' +
+          'Connection: close\r\n' +
+          '\r\n',
+        _pendingEncoding: 'latin1',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular *2],
+        [Symbol(async_id_symbol)]: 51,
+        [Symbol(kHandle)]: null,
+        [Symbol(kSetNoDelay)]: false,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(kCapture)]: false,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0
+      },
+      _header: 'GET omdbapi.com/?apikey=fbc69e49&t=terminator HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.24.0\r\n' +
+        'Host: localhost\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: Agent {
+        _events: [Object: null prototype] {
+          free: [Function (anonymous)],
+          newListener: [Function: maybeEnableKeylog]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object: null prototype] { path: null },
+        requests: [Object: null prototype] {},
+        sockets: [Object: null prototype] {
+          'localhost:80:': [
+            Socket {
+              connecting: false,
+              _hadError: true,
+              _parent: null,
+              _host: 'localhost',
+              _readableState: ReadableState {
+                objectMode: false,
+                highWaterMark: 16384,
+                buffer: BufferList { head: null, tail: null, length: 0 },
+                length: 0,
+                pipes: [],
+                flowing: true,
+                ended: false,
+                endEmitted: false,
+                reading: true,
+                constructed: true,
+                sync: false,
+                needReadable: true,
+                emittedReadable: false,
+                readableListening: false,
+                resumeScheduled: false,
+                errorEmitted: true,
+                emitClose: false,
+                autoDestroy: true,
+                destroyed: true,
+                errored: Error: connect ECONNREFUSED 127.0.0.1:80
+                    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1132:16) {
+                  errno: -61,
+                  code: 'ECONNREFUSED',
+                  syscall: 'connect',
+                  address: '127.0.0.1',
+                  port: 80,
+                  config: {
+                    transitional: {
+                      silentJSONParsing: true,
+                      forcedJSONParsing: true,
+                      clarifyTimeoutError: false
+                    },
+                    adapter: [Function: httpAdapter],
+                    transformRequest: [ [Function: transformRequest] ],
+                    transformResponse: [ [Function: transformResponse] ],
+                    timeout: 0,
+                    xsrfCookieName: 'XSRF-TOKEN',
+                    xsrfHeaderName: 'X-XSRF-TOKEN',
+                    maxContentLength: -1,
+                    maxBodyLength: -1,
+                    validateStatus: [Function: validateStatus],
+                    headers: {
+                      Accept: 'application/json, text/plain, */*',
+                      'User-Agent': 'axios/0.24.0'
+                    },
+                    method: 'get',
+                    url: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+                    data: undefined
+                  },
+                  request: [Circular *1],
+                  response: undefined,
+                  isAxiosError: true,
+                  toJSON: [Function: toJSON],
+                  level: 'error',
+                  timestamp: '2021-11-17T21:06:41.079Z',
+                  [Symbol(level)]: 'error'
+                },
+                closed: true,
+                closeEmitted: true,
+                defaultEncoding: 'utf8',
+                awaitDrainWriters: null,
+                multiAwaitDrain: false,
+                readingMore: false,
+                decoder: null,
+                encoding: null,
+                [Symbol(kPaused)]: false
+              },
+              _events: [Object: null prototype] {
+                end: [Function: onReadableStreamEnd],
+                connect: [
+                  [Function: bound onceWrapper] {
+                    listener: [Function (anonymous)]
+                  },
+                  [Function: bound onceWrapper] {
+                    listener: [Function: connect]
+                  },
+                  [Function: bound onceWrapper] {
+                    listener: [Function (anonymous)]
+                  }
+                ],
+                free: [Function: onFree],
+                close: [
+                  [Function: onClose],
+                  [Function: socketCloseListener]
+                ],
+                timeout: [Function: onTimeout],
+                agentRemove: [Function: onRemove],
+                error: [Function: socketErrorListener],
+                drain: [Function: ondrain]
+              },
+              _eventsCount: 8,
+              _maxListeners: undefined,
+              _writableState: WritableState {
+                objectMode: false,
+                highWaterMark: 16384,
+                finalCalled: false,
+                needDrain: false,
+                ending: false,
+                ended: false,
+                finished: false,
+                destroyed: true,
+                decodeStrings: false,
+                defaultEncoding: 'utf8',
+                length: 163,
+                writing: true,
+                corked: 0,
+                sync: false,
+                bufferProcessing: false,
+                onwrite: [Function: bound onwrite],
+                writecb: [Function: bound onFinish],
+                writelen: 163,
+                afterWriteTickInfo: null,
+                buffered: [],
+                bufferedIndex: 0,
+                allBuffers: true,
+                allNoop: true,
+                pendingcb: 1,
+                constructed: true,
+                prefinished: false,
+                errorEmitted: true,
+                emitClose: false,
+                autoDestroy: true,
+                errored: Error: connect ECONNREFUSED 127.0.0.1:80
+                    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1132:16) {
+                  errno: -61,
+                  code: 'ECONNREFUSED',
+                  syscall: 'connect',
+                  address: '127.0.0.1',
+                  port: 80,
+                  config: {
+                    transitional: {
+                      silentJSONParsing: true,
+                      forcedJSONParsing: true,
+                      clarifyTimeoutError: false
+                    },
+                    adapter: [Function: httpAdapter],
+                    transformRequest: [ [Function: transformRequest] ],
+                    transformResponse: [ [Function: transformResponse] ],
+                    timeout: 0,
+                    xsrfCookieName: 'XSRF-TOKEN',
+                    xsrfHeaderName: 'X-XSRF-TOKEN',
+                    maxContentLength: -1,
+                    maxBodyLength: -1,
+                    validateStatus: [Function: validateStatus],
+                    headers: {
+                      Accept: 'application/json, text/plain, */*',
+                      'User-Agent': 'axios/0.24.0'
+                    },
+                    method: 'get',
+                    url: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+                    data: undefined
+                  },
+                  request: [Circular *1],
+                  response: undefined,
+                  isAxiosError: true,
+                  toJSON: [Function: toJSON],
+                  level: 'error',
+                  timestamp: '2021-11-17T21:06:41.079Z',
+                  [Symbol(level)]: 'error'
+                },
+                closed: true,
+                closeEmitted: true,
+                [Symbol(kOnFinished)]: []
+              },
+              allowHalfOpen: false,
+              _sockname: null,
+              _pendingData: 'GET omdbapi.com/?apikey=fbc69e49&t=terminator HTTP/1.1\r\n' +
+                'Accept: application/json, text/plain, */*\r\n' +
+                'User-Agent: axios/0.24.0\r\n' +
+                'Host: localhost\r\n' +
+                'Connection: close\r\n' +
+                '\r\n',
+              _pendingEncoding: 'latin1',
+              server: null,
+              _server: null,
+              parser: null,
+              _httpMessage: [Circular *2],
+              [Symbol(async_id_symbol)]: 51,
+              [Symbol(kHandle)]: null,
+              [Symbol(kSetNoDelay)]: false,
+              [Symbol(lastWriteQueueSize)]: 0,
+              [Symbol(timeout)]: null,
+              [Symbol(kBuffer)]: null,
+              [Symbol(kBufferCb)]: null,
+              [Symbol(kBufferGen)]: null,
+              [Symbol(kCapture)]: false,
+              [Symbol(kBytesRead)]: 0,
+              [Symbol(kBytesWritten)]: 0
+            }
+          ]
+        },
+        freeSockets: [Object: null prototype] {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        scheduling: 'lifo',
+        maxTotalSockets: Infinity,
+        totalSocketCount: 1,
+        [Symbol(kCapture)]: false
+      },
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: 'omdbapi.com/?apikey=fbc69e49&t=terminator',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype] {
+        accept: [ 'Accept', 'application/json, text/plain, */*' ],
+        'user-agent': [ 'User-Agent', 'axios/0.24.0' ],
+        host: [ 'Host', 'localhost' ]
+      }
+    },
+    _currentUrl: 'http:omdbapi.com/?apikey=fbc69e49&t=terminator',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON],
+  level: 'error',
+  timestamp: '2021-11-17T21:06:41.079Z'
+}
+{ level: 'error', timestamp: '2021-11-17T21:10:13.205Z' }
+{ level: 'error', timestamp: '2021-11-17T21:15:50.441Z' }
+{ level: 'error', timestamp: '2021-11-17T21:22:52.625Z' }
+{ level: 'error', timestamp: '2021-11-17T21:25:05.352Z' }
+{
+  code: 'ERR_INVALID_ARG_TYPE',
+  level: 'error',
+  timestamp: '2021-11-17T21:34:36.035Z'
+}
+{
+  message: 'listen EADDRINUSE: address already in use :::5000',
+  level: 'error',
+  timestamp: '2021-11-17T21:46:42.775Z'
+}
+{
+  message: 'The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Array',
+  level: 'error',
+  timestamp: '2021-11-17T22:09:58.127Z'
+}
+{
+  message: 'The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Array',
+  level: 'error',
+  timestamp: '2021-11-17T22:11:37.435Z'
+}
+{
+  message: 'Invalid api url: /movies/1111',
+  level: 'error',
+  timestamp: '2021-11-17T22:25:59.086Z'
+}
+{
+  message: 'Invalid api url: /movies/1111',
+  level: 'error',
+  timestamp: '2021-11-17T22:26:39.986Z'
+}
+{
+  message: 'Invalid api url: /movies/1111',
+  level: 'error',
+  timestamp: '2021-11-17T22:30:03.512Z'
+}
+{
+  message: 'Invalid api url: /movies/1111',
+  level: 'error',
+  timestamp: '2021-11-17T22:38:26.466Z'
+}
+{
+  message: 'Invalid api url: /movies/1111',
+  level: 'error',
+  timestamp: '2021-11-17T22:54:48.208Z'
+}
+{
+  message: 'Invalid api url: /movies/1111',
+  level: 'error',
+  timestamp: '2021-11-17T22:57:20.883Z'
+}
+{
+  message: "Cannot read property 'toLocaleLowerCase' of undefined",
+  level: 'error',
+  timestamp: '2021-11-17T23:58:19.754Z'
+}
+{
+  message: "Cannot read property 'toLowerCase' of undefined",
+  level: 'error',
+  timestamp: '2021-11-18T00:03:13.452Z'
+}
+{
+  message: "Cannot read property 'toLowerCase' of undefined",
+  level: 'error',
+  timestamp: '2021-11-18T00:06:22.824Z'
+}
+{
+  message: "Cannot read property 'toLowerCase' of undefined",
+  level: 'error',
+  timestamp: '2021-11-18T00:08:22.063Z'
+}
+{
+  message: "Cannot read property 'toLowerCase' of undefined",
+  level: 'error',
+  timestamp: '2021-11-18T00:11:53.794Z'
+}
+{
+  message: "Cannot read property 'toLowerCase' of undefined",
+  level: 'error',
+  timestamp: '2021-11-18T00:13:53.269Z'
+}
+{
+  message: 'The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Array',
+  level: 'error',
+  timestamp: '2021-11-18T00:24:18.461Z'
+}
+{
+  message: 'Invalid api url: /favicon.ico',
+  level: 'error',
+  timestamp: '2021-11-18T09:41:29.922Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-18T09:50:46.189Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-18T09:53:02.307Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-18T09:55:14.304Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-18T09:56:27.240Z'
+}
+{
+  message: 'Unexpected end of JSON input',
+  level: 'error',
+  timestamp: '2021-11-18T09:58:17.322Z'
+}
+{
+  code: 'ERR_INVALID_ARG_TYPE',
+  level: 'error',
+  timestamp: '2021-11-18T10:31:04.373Z'
+}
